@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<!-- 父容器 -->
+<view>
+  <!-- 一级分类 -->
+  <view class='kind1-list'>
+    <view wx:for='{{kinds}}' data-index='{{index}}' bindtap='kinds_onclick' wx:key='index' class="{{item.selected?'kind1-list-item1':'kind1-list-item2'}}">
+    <!-- 二级分类名称 -->
+      {{item.name}}
+    </view>
+  </view>
+  <!-- 二级分类 -->
+  <view class='kind2-list'>
+    <view class='kind2-list-item' data-index='{{index}}' bindtap='kind_onclick' wx:for='{{selected_kind_names.names}}' wx:key='index'>
+      <image class='kind2-list-item-cover' src='{{item.cover}}'></image>
+      <view class='kind2-list-item-title'>{{item.name}}</view>
+      <view class='kind2-list-item-message'>{{item.message}}</view>
+    </view>
+  </view>
+</view>

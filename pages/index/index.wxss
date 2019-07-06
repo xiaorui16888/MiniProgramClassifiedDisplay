@@ -1,0 +1,62 @@
+/**index.wxss**/
+
+.kind1-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx 35rpx 20rpx 35rpx;
+}
+
+.kind1-list-item1 {
+  font-size: 26rpx;
+  text-align: center;
+  color: #fff;
+  padding: 18rpx 50rpx 18rpx 50rpx;
+  border-radius: 40rpx;
+  background-color: #35d187;
+  box-shadow: 2rpx 4rpx 2rpx #ddd8d5;
+}
+
+.kind1-list-item2 {
+  font-size: 26rpx;
+  text-align: center;
+  color: #000;
+  padding: 18rpx 50rpx 18rpx 50rpx;
+  border-radius: 40rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 #ddd8d5;
+}
+
+.kind2-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.kind2-list-item {
+  margin: 20rpx;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8rpx 5rpx 2rpx #f4f4f2;
+}
+
+.kind2-list-item-cover {
+  height: 180rpx;
+  width: 100%;
+}
+
+.kind2-list-item-title {
+  font-weight: 700;
+  font-size: 28rpx;
+  padding: 20rpx 25rpx 15rpx 25rpx;
+}
+
+.kind2-list-item-message {
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  color: #a8a8a6;
+  padding: 0 25rpx 20rpx 25rpx;
+}
